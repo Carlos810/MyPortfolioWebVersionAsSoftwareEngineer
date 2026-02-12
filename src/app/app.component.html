@@ -1,12 +1,57 @@
- <app-navbar></app-navbar>
- <app-hero></app-hero>
- 
- <mat-slide-toggle [checked]="isEnabled()" 
-                    (change)="isEnabled.set($event.checked)">
-    Enable feature
-  </mat-slide-toggle>
+<header>
+  <nav>
+    <app-navbar></app-navbar>
+  </nav>
+</header>
+
+<main id="home">
+  <section>
+    <app-hero [isEnabled]="isEnabled()"></app-hero>
+  </section>
+
+  <section class="about-me" aria-label="personal-information">
+    <app-hero [isEnabled]="false"></app-hero>
+  </section>
+    
+  <section class="skills">
+    <app-simple-box></app-simple-box>
+    <app-simple-box></app-simple-box>
+  </section>
 
 
-  <p>Status: {{ isEnabled() }}</p>
- 
+  <section class="summary">
+
+  </section>
+
+
+  <section class="tools">
+
+  </section>
+
+
+  <section class="timeline">
+
+  </section>
+
+  <section class="projects">
+
+  </section>
+
+  <section class="contact">
+
+  </section>
+
+  <!-- <section class="features" aria-label="Características">
+    <mat-slide-toggle [checked]="isEnabled()" 
+                      (change)="isEnabled.set($event.checked)">
+      Enable feature
+    </mat-slide-toggle>
+    <p>Status: {{ isEnabled() }}</p>
+  </section> -->
+
   <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <!-- Footer content -->
+</footer>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,input  } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  isEnabled: any = input.required<boolean>();
+
 
 }

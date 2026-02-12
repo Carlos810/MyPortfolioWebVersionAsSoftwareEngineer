@@ -1,4 +1,13 @@
-<div class="hero-container">
-    <p>hero works!</p>
+<section class="hero-container">
+    @if(isEnabled()) {
+        <!-- download resume -->
+      <button>download resume</button>
+      <button>view projects</button>
+    } @else {
+      <p>option a</p>
+      <p>option b</p>
+      <p>option c</p>
+      <p>option d</p>
+    }
+</section>
 
-</div>
