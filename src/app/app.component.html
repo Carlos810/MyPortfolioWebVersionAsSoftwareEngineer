@@ -1,0 +1,12 @@
+ <app-navbar></app-navbar>
+ <app-hero></app-hero>
+ 
+ <mat-slide-toggle [checked]="isEnabled()" 
+                    (change)="isEnabled.set($event.checked)">
+    Enable feature
+  </mat-slide-toggle>
+
+
+  <p>Status: {{ isEnabled() }}</p>
+ 
+  <router-outlet></router-outlet>
