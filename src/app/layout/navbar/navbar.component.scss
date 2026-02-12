@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -10,17 +12,18 @@ mat-toolbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: $var-color-solid-white;
 }
 
 .mat-toolbar {
-color: #000 ;
+color: $var-color-solid-black;
 }
+
 :host ::ng-deep .mat-mdc-button .mdc-button__label,
 :host ::ng-deep .mat-mdc-button,
 :host ::ng-deep button,
 :host ::ng-deep a {
-color: #000 ;
+color: $var-color-solid-black;
 opacity: 1 !important;
 font-weight: 500;
 font-size: 1.1rem;

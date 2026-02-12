@@ -1,5 +1,7 @@
+@use 'variables' as *;
+
 .hero-container{
     width: 100vw;
     height: 38vh;
-    background-color: aqua;
+    background-color: $var-color-solid-aqua;
 }
