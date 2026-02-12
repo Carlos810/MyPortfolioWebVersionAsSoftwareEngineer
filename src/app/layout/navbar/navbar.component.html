@@ -1,13 +1,19 @@
-<mat-toolbar color="warn">
-  <span class="logo">Juan Carlos Gómez López</span>
+<mat-toolbar color="warn" role="toolbar" aria-label="Navegación principal">
+  <span class="logo">logo</span>
+  <span>.                      .</span>
+  <span class="name">Juan Carlos Gómez López</span>
 
   <span class="spacer"></span>
 
-  <button class="navbar-title" mat-button routerLink="/">Home</button>
-  <button class="navbar-title" mat-button routerLink="/about">About</button>
-  <button class="navbar-title" mat-button routerLink="/skills">Skills</button>
-  <button class="navbar-title" mat-button routerLink="/experience">Experience</button>
-  <button class="navbar-title" mat-button routerLink="/projects">Projects</button>
-  <button class="navbar-title" mat-button routerLink="/contact">Contact</button>
+  <nav aria-label="Menu de navegación">
+    <button class="navbar-title" mat-button routerLink="/">Home</button>
+    <button class="navbar-title" mat-button routerLink="/about">About Me</button>
+    <button class="navbar-title" mat-button routerLink="/skills">Skills</button>
+    <button class="navbar-title" mat-button routerLink="/experience">Summary</button>
+    <button class="navbar-title" mat-button routerLink="/core-expertis">Tools</button>
+    <button class="navbar-title" mat-button routerLink="/carrer-timeline">Timeline</button>
+    <button class="navbar-title" mat-button routerLink="/proyects">Projects</button>
+    <button class="navbar-title" mat-button routerLink="/contact">Contact</button>
+  </nav>
 </mat-toolbar>
 
