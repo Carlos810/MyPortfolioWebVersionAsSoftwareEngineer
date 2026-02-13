@@ -1,0 +1,17 @@
+<div class="timeline-container">
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let item of timelineItems; let last = last">
+      <div class="timeline-dot"></div>
+      <div class="timeline-line" [class.hidden]="last"></div>
+      
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3 class="timeline-title">{{ item.title }}</h3>
+          <p class="timeline-position">{{ item.position }}</p>
+        </div>
+        <p class="timeline-date">{{ item.dateRange }}</p>
+        <p class="timeline-description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
