@@ -1,53 +1,70 @@
+
 <header>
   <nav>
     <app-navbar></app-navbar>
   </nav>
 </header>
 
-<main>
+<main class="container mx-auto px-4 md:px-6 lg:px-8">
   <section>
     <app-hero [isEnabled]="isEnabled()"></app-hero>
   </section>
 
-  <section class="about-me" aria-label="personal-information">
-    <app-hero [isEnabled]="false"></app-hero>
+  <section class="about-me py-12" aria-label="personal-information">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div>
+        <app-hero [isEnabled]="false"></app-hero>
+      </div>
+      <div>
+        <!-- Información secundaria (texto, imagen, CTAs) -->
+      </div>
+    </div>
   </section>
     
-  <section class="skills">
-    <app-simple-box></app-simple-box>
-    <app-simple-box></app-simple-box>
+  <section class="skills py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <app-simple-box></app-simple-box>
+      <app-simple-box></app-simple-box>
+    </div>
   </section>
 
 
-  <section class="summary">
-
+  <section class="summary py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div><!-- contenido summary --></div>
+      <div><!-- secundario --></div>
+    </div>
   </section>
 
 
-  <section class="tools">
-
+  <section class="tools py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div><!-- tools izquierdo --></div>
+      <div><!-- tools derecho --></div>
+    </div>
   </section>
 
 
-  <section class="timeline">
-
+  <section class="timeline py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div><!-- timeline --></div>
+      <div></div>
+    </div>
   </section>
 
-  <section class="projects">
-
+  <section class="projects py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div><!-- proyectos --></div>
+      <div></div>
+    </div>
   </section>
 
-  <section class="contact">
-
+  <section class="contact py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div><!-- contacto --></div>
+      <div></div>
+    </div>
   </section>
-
-  <!-- <section class="features" aria-label="Características">
-    <mat-slide-toggle [checked]="isEnabled()" 
-                      (change)="isEnabled.set($event.checked)">
-      Enable feature
-    </mat-slide-toggle>
-    <p>Status: {{ isEnabled() }}</p>
-  </section> -->
 
   <router-outlet></router-outlet>
 </main>
