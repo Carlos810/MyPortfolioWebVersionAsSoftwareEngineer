@@ -4,7 +4,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HeroComponent } from './layout/hero/hero.component';
-import { SimpleBoxComponent } from './layout/simple-box/simple-box.component';
+import { TimelineComponent } from './layout/timeline/timeline.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ import { SimpleBoxComponent } from './layout/simple-box/simple-box.component';
     FormsModule,
     NavbarComponent,
     HeroComponent,
-    SimpleBoxComponent
+    TimelineComponent
 
   ],
   templateUrl: './app.component.html',

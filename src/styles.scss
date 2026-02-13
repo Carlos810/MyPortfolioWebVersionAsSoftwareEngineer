@@ -15,7 +15,7 @@
 
 html, body { 
     height: 100%;
-    background-color: gray;
+    background-color: #ececec;
     margin: 0;
     padding: 0;
 }
@@ -35,4 +35,14 @@ main {
     margin: 0 auto;
     padding: 0 2.8rem;
     width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }

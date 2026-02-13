@@ -1,0 +1,65 @@
+// Import variables and mixins
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/functions';
+
+:host {
+  --color-primary-dark: #2d5a4f;
+  --color-primary: #45907f;
+  --color-primary-light: #6ba99d;
+  --color-light-bg: #f0f5f3;
+}
+
+// Global spacing and structure
+main {
+  section {
+    &.hero-section {
+      position: relative;
+      margin-bottom: 2rem;
+      
+      // Green wave decoration
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background: linear-gradient(135deg, transparent 0%, #f0f5f3 50%, transparent 100%);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+// Smooth animations and transitions
+a, button {
+  transition: all 0.3s ease;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  main {
+    padding: 0;
+    
+    section {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+}
+
+// Print styles
+@media print {
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+// Accessibility
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
