@@ -3,8 +3,33 @@
 @use 'styles/mixins' as *;
 @use 'styles/functions' as *;
 
+/* Reset universal */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body { 
     height: 100%;
     background-color: gray;
+    margin: 0;
+    padding: 0;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+/* Header ancho completo pero contenido controlado */
+header {
+    width: 100%;
+}
+
+/* Main centrado con padding */
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2.8rem;
+    width: 100%;
+}
