@@ -1,8 +1,8 @@
-<section class="hero-container">
+<section class="hero-container py-16">
     @if(isEnabled()) {
         <!-- download resume -->
-      <button>download resume</button>
-      <button>view projects</button>
+      <button class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition mr-4">download resume</button>
+      <button class="inline-flex items-center px-6 py-3 bg-white text-blue-600 border border-blue-200 rounded-md hover:bg-blue-50 transition">view projects</button>
     } @else {
       <p>option a</p>
       <p>option b</p>
