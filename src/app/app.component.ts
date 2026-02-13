@@ -4,6 +4,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HeroComponent } from './layout/hero/hero.component';
+import { SimpleBoxComponent } from './layout/simple-box/simple-box.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { HeroComponent } from './layout/hero/hero.component';
     MatSlideToggleModule,
     FormsModule,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    SimpleBoxComponent
 
   ],
   templateUrl: './app.component.html',
@@ -22,7 +24,7 @@ import { HeroComponent } from './layout/hero/hero.component';
 
 export class AppComponent {
   title = 'carlos-portfolio-clean';
-  isEnabled = signal(false);
+  isEnabled = signal(true);
 
 
 }
