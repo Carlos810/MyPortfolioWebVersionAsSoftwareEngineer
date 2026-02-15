@@ -1,19 +1,41 @@
-<mat-toolbar color="warn" role="toolbar" aria-label="Navegación principal">
-  <span class="logo">logo</span>
-  <span>.                      .</span>
-  <span class="name">Juan Carlos Gómez López</span>
+<mat-toolbar color="warn" class="toolbar">
+
+  <!-- Shield -->
+  <i class="fas fa-shield-alt text-emerald-400 text-lg mr-3"></i>
 
   <span class="spacer"></span>
 
-  <nav aria-label="Menu de navegación">
-    <button class="navbar-title" mat-button routerLink="/">Home</button>
-    <button class="navbar-title" mat-button routerLink="/about">About Me</button>
-    <button class="navbar-title" mat-button routerLink="/skills">Skills</button>
-    <button class="navbar-title" mat-button routerLink="/experience">Summary</button>
-    <button class="navbar-title" mat-button routerLink="/core-expertis">Tools</button>
-    <button class="navbar-title" mat-button routerLink="/carrer-timeline">Timeline</button>
-    <button class="navbar-title" mat-button routerLink="/proyects">Projects</button>
-    <button class="navbar-title" mat-button routerLink="/contact">Contact</button>
-  </nav>
-</mat-toolbar>
+  <!-- DESKTOP MENU -->
+  <ng-container *ngIf="!isMobile">
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About Me</button>
+    <button mat-button routerLink="/skills">Skills</button>
+    <button mat-button routerLink="/experience">Summary</button>
+    <button mat-button routerLink="/core-expertise">Tools</button>
+    <button mat-button routerLink="/career-timeline">Timeline</button>
+    <button mat-button routerLink="/projects">Projects</button>
+    <button mat-button routerLink="/contact">Contact</button>
+  </ng-container>
 
+  <!-- MOBILE MENU -->
+  <ng-container *ngIf="isMobile">
+
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/projects">Projects</button>
+    <button mat-button routerLink="/contact">Contact</button>
+
+    <button mat-icon-button [matMenuTriggerFor]="mobileMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #mobileMenu="matMenu">
+      <button mat-menu-item routerLink="/about">About Me</button>
+      <button mat-menu-item routerLink="/skills">Skills</button>
+      <button mat-menu-item routerLink="/experience">Summary</button>
+      <button mat-menu-item routerLink="/core-expertise">Tools</button>
+      <button mat-menu-item routerLink="/career-timeline">Timeline</button>
+    </mat-menu>
+
+  </ng-container>
+
+</mat-toolbar>

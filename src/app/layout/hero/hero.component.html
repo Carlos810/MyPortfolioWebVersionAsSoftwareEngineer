@@ -1,48 +1,59 @@
-<section class="hero-container py-12 md:py-16 flex items-center justify-center">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8 text-white max-w-5xl relative z-10">
-      @if(isEnabled()) {
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <!-- Left side: Text content -->
-          <div class="space-y-6">
-            <div>
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
-                Juan Carlos <br>Gómez Lopes
-              </h1>
-              <p class="text-xl md:text-2xl font-light text-gray-100">
-                Senior Backend<br>Software Engineer
-              </p>
-            </div>
-            
-            <p class="text-base md:text-lg text-gray-200 max-w-md leading-relaxed">
-              4+ years building distributed backends. Systems 6instmcor. Banking, automotive, and platform expertise.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#projects" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary-dark font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-                <i class="fas fa-download"></i>
-                Download Resume
-              </a>
-              <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-dark transition-colors duration-300">
-                <i class="fas fa-arrow-right"></i>
-                View Projects
-              </a>
-            </div>
-          </div>
-          
-          <!-- Right side: Professional image placeholder -->
-          <div class="hidden md:flex justify-center items-center">
-            <div class="w-64 h-64 lg:w-72 lg:h-72 rounded-full bg-gradient-to-br from-primary-light to-primary-dark opacity-20 flex items-center justify-center">
-              <i class="fas fa-user text-8xl text-white opacity-30"></i>
-            </div>
-          </div>
-        </div>
-      } @else {
-        <!-- Alternative content when disabled -->
-        <div class="space-y-4 text-center">
-          <p class="text-2xl font-semibold">Professional Experience Showcase</p>
-          <p class="text-gray-200">Backend Engineering | Distributed Systems | Enterprise Solutions</p>
-        </div>
-      }
-    </div>
-</section>
+<section class="hero-container py-1 flex items-center">
+  <div class="container mx-auto px-6 md:px-6 lg:px-10 xl:px-0 text-white max-w-6xl relative z-10">
+    
+    @if(isEnabled()) {
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
+        <!-- LEFT SIDE -->
+        <div class="space-y-5">
+          
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight whitespace-nowrap z-200">
+            Juan Carlos Gómez L.
+          </h1>
+          <!-- <p class="text-xl md:text-2xl font-light text-gray-100">
+          </p> -->
+          <h5 class="text-4xl md:text-5xl lg:text-1xl  leading-tight whitespace-nowrap z-200">
+             Software Engineer
+          </h5>
+
+          <p class="text-base md:text-2xl text-gray-100 max-w-lg  leading-relaxed">      
+             Designing and delivering enterprise-grade backend systems focused on data consistency, distributed transactions, and high-reliability architectures across regulated industries.      
+             
+          </p>
+
+          <!-- BUTTONS (subidos) -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            
+            <a href="/assets/resume.pdf" target="_blank"
+               download
+               class="inline-flex items-center justify-center gap-2 px-6 py-3  bg-[#39EAD9] text-primary-dark font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-xl relative z-20">
+              <i class="fas fa-download"></i>
+              My Resume
+            </a>
+
+            <a href="#projects" 
+               class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-dark transition-all duration-300 relative z-20">
+              <i class="fas fa-arrow-right"></i>
+              Explore Projects
+            </a>
+
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="hidden md:flex justify-end pr-6">
+            <div class="w-80 h-80 rounded-full 
+              bg-gradient-to-br from-primary-light to-primary-dark 
+              flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/images/foto-perfil.jpg"
+                  class="w-full h-full object-cover object-[10%_35%] scale-110"
+                  alt="Juan Carlos Profile"
+                />
+            </div>
+        </div>
+
+      </div>
+    }
+  </div>
+</section>
