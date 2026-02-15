@@ -1,7 +1,5 @@
-// Import variables and mixins
-@import '../styles/variables';
-@import '../styles/mixins';
-@import '../styles/functions';
+// Use shared styles via the new module system
+@use '../styles/index' as *;
 
 :host {
   --color-primary-dark: #2d5a4f;
@@ -62,4 +60,37 @@ a, button {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Estilos para el botón que lleva al navbar */
+.btn-scroll-navbar {
+  position: fixed;
+  bottom: 1.75rem;
+  left: 1.75rem;
+  transform: none;
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary-dark, #2d5a4f);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.btn-scroll-navbar .arrow {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.btn-scroll-navbar:focus {
+  outline: 3px solid rgba(69,144,127,0.24);
+}
+
+@media (max-width: 768px) {
+  .btn-scroll-navbar { display: none; }
 }
