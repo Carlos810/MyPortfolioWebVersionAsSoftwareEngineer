@@ -1,3 +1,9 @@
+## 🌐 Version DEMO
+
+🔗 **Live Demo:** https://myresume-softwareengineer.netlify.app/
+
+---
+
 # 🚀 CarlosPortfolioClean  
 ### Modular, Config-Driven Angular Portfolio (Reusable Architecture)
 
@@ -30,6 +36,40 @@ Each section is:
 - Replaceable without affecting other modules
 - Structured for future lazy loading
 - Ready to be driven by configuration files
+
+---
+
+# 🎨 Styling Strategy (SCSS + Tailwind)
+
+This project combines **SCSS modular architecture** with **TailwindCSS utility-first styling** to achieve flexibility without overloading the initial bundle.
+
+### Why not Bootstrap?
+
+Unlike Bootstrap, which injects a large predefined CSS system at startup, this project:
+
+- Uses Tailwind’s utility-based approach for grids, spacing, and responsive design.
+- Applies SCSS for structured styling, variables, mixins, and reusable patterns.
+- Avoids unnecessary CSS bloat.
+- Keeps bundle size optimized.
+- Improves maintainability through modular styling layers.
+
+### Styling Stack
+
+- **TailwindCSS** → Grid, spacing, layout utilities, responsive design.
+- **SCSS** → Variables, theming tokens, mixins, reusable styling logic.
+- **Custom CSS animations** → Motion layer control without external UI frameworks.
+
+### Architectural Advantage Over Bootstrap
+
+| Bootstrap Approach | This Project Approach |
+|--------------------|----------------------|
+| Preloaded heavy CSS | Utility-based minimal CSS |
+| Global styling overrides | Scoped modular SCSS |
+| Opinionated UI components | Fully customizable layout |
+| Larger initial CSS payload | Optimized bundle size |
+| Less flexible theming | JSON-driven theme system |
+
+This ensures better performance and full control over visual design.
 
 ---
 
@@ -85,17 +125,6 @@ This enables:
 
 ---
 
-# 🎨 UI / UX Strategy
-
-Built using:
-
-- Angular 19 (Standalone Architecture)
-- TailwindCSS utility-first styling
-- Component-driven layout
-- Config-driven visual tokens
-
----
-
 # 📂 Modular Structure Advantages
 
 | Feature | Benefit |
@@ -106,6 +135,8 @@ Built using:
 | Theming via config | White-label capability |
 | Accordion project view | Scalable project expansion |
 | Animation hooks | Enhanced UX polish |
+| SCSS modularization | Structured style control |
+| Tailwind utility system | Performance-optimized UI |
 
 ---
 
@@ -153,6 +184,7 @@ Example:
 | UI Primitives | Reusable atomic elements |
 | Animation Layer | Motion & transitions |
 | Theme Engine | Visual system |
+| Styling Layer (SCSS + Tailwind) | Structured + utility styling |
 
 ---
 
@@ -162,6 +194,8 @@ Example:
 ✔ Configuration over hardcoding  
 ✔ Component reusability  
 ✔ Clear domain boundaries  
+✔ Performance-optimized styling  
+✔ Avoids framework CSS bloat  
 ✔ Future-ready for CMS integration  
 ✔ Easy theming  
 
