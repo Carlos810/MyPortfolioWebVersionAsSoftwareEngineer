@@ -11,16 +11,22 @@ import { CommonModule } from '@angular/common';
 export class TimelineComponent {
   timelineItems = [
     {
-      title: 'Thona Seguros',
-      position: 'Software Engineer .NET',
-      dateRange: 'Insurance Technology Company',
-      description: 'Designed resilient asynchronous transactional flows in .NET and PostgreSQL, ensuring data consistency in critical business processes. Improved high-traffic module performance by 40–60% through SQL and data access optimization. Standardized DTOs and internal contracts to reduce technical debt and increase cross-service reuse. Implemented business state validations that significantly reduced operational errors and manual reprocessing.'
+      title: 'Satori Tech consulting',
+      position: 'Java Microservices Developer',
+      dateRange: 'Banking Company',
+      description: 'I developed and maintained a payment platform following best practices to ensure high availability (HA); managed Kubernetes infrastructure; and handled deployments using CI/CD methodologies.'
     },
     {
-      title: 'It Group',
-      position: 'Tester and Backend Developer',
+      title: 'Sidensa consulting',
+      position: 'Java Backend Developer',
+      dateRange: 'Insurance Technology Company',
+      description: 'Designed resilient asynchronous transactional flows in JAVA and PostgreSQL, ensuring data consistency in critical business processes. Improved high-traffic module performance and data access optimization. Standardized DTOs and internal contracts to reduce technical debt and increase cross-service reuse. Implemented business state validations that significantly reduced operational errors and manual reprocessing.'
+    },
+    {
+      title: 'Sidensa consulting',
+      position: 'Java Backend Developer',
       dateRange: 'Automotive Industry',
-      description: 'Contributed to .NET-based business applications supporting real operational workflows. Delivered and validated APIs and scheduled backend jobs critical to daily operations. Performed end-to-end functional testing to ensure business rule accuracy and release stability. Collaborated with DB analysts to maintain data integrity through validations and controlled adjustments. Produced technical and test documentation for production incidents and feature deliveries. Actively participated in Scrum ceremonies, contributing to sprint planning, reviews, and issue resolution.'
+      description: 'Contributed to business applications supporting real operational workflows. Delivered and validated APIs and scheduled backend jobs critical to daily operations. Performed end-to-end functional testing to ensure business rule accuracy and release stability. Collaborated with DB analysts to maintain data integrity through validations and controlled adjustments. Produced technical and test documentation for production incidents and feature deliveries. Actively participated in Scrum ceremonies, contributing to sprint planning, reviews, and issue resolution.'
     },
     {
       title: 'Clickalia México',
